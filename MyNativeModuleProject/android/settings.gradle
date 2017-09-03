@@ -1,0 +1,5 @@
+rootProject.name = 'MyNativeModuleProject'
+include ':my-native-module'
+project(':my-native-module').projectDir = new File(rootProject.projectDir, '../node_modules/my-native-module/android/app')
+
+include ':app'
